@@ -62,10 +62,10 @@ export default class LinksScreen extends React.Component {
               </ManropeEB>
               <Space25/>
               <View style={{flex: 1, flexDirection: 'row'}}>
-              <View style={{ flexDirection: 'column', alignItems: 'center', width: 64}}>
-                <Text>FEB</Text>
-                <Text>21</Text>
-                <Text>WED</Text>
+              <View style={{ flexDirection: 'column', alignItems: 'center', width: 64, paddingLeft: 12}}>
+                <ManropeB style={{fontSize: 12, color: '#6E737E', lineHeight: 17}}>FEB</ManropeB>
+                <ManropeB style={{fontSize: 24, color: '#525766', lineHeight: 30}}>21</ManropeB>
+                <ManropeB style={{fontSize: 12, color: '#8B8E95', lineHeight: 15}}>WED</ManropeB>
               </View>
               <Text>Testing</Text>
               <Text>Testing again</Text>
