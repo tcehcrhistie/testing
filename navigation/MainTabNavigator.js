@@ -2,14 +2,14 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
-import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import TabBarIcon from '../components/TabBarIcon'
+import HomeScreen from '../screens/HomeScreen'
+import SettingsScreen from '../screens/SettingsScreen'
+import TestingScreen from '../screens/TestingScreen.js'
 
 const HomeStack = createStackNavigator({
-  Home: HomeScreen,
-});
+  Home: HomeScreen
+})
 
 HomeStack.navigationOptions = {
   tabBarLabel: 'Home',
@@ -22,26 +22,26 @@ HomeStack.navigationOptions = {
           : 'md-information-circle'
       }
     />
-  ),
-};
+  )
+}
 
 const LinksStack = createStackNavigator({
-  Links: LinksScreen,
-});
+  Testingl: TestingScreen
+})
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Testing',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-rocket' : 'md-rocket'}
     />
-  ),
-};
+  )
+}
 
 const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen,
-});
+  Settings: SettingsScreen
+})
 
 SettingsStack.navigationOptions = {
   tabBarLabel: 'Settings',
@@ -50,11 +50,11 @@ SettingsStack.navigationOptions = {
       focused={focused}
       name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
     />
-  ),
-};
+  )
+}
 
 export default createBottomTabNavigator({
   HomeStack,
   LinksStack,
-  SettingsStack,
-});
+  SettingsStack
+})

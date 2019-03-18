@@ -42,13 +42,19 @@ export default class HomeScreen extends React.Component {
             </View>
 
             <Text style={styles.getStartedText}>
-              Hello Wollsa
+              Hello st
             </Text>
           </View>
 
           <View style={styles.helpContainer}>
             <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
               <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.helpContainer}>
+            <TouchableOpacity onPress={this._handleTestingPress} style={styles.helpLink}>
+              <Text style={styles.helpTextingText}>Testing Screen</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>
@@ -96,6 +102,7 @@ export default class HomeScreen extends React.Component {
       'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
     );
   };
+
 }
 
 const styles = StyleSheet.create({
