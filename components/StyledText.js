@@ -8,50 +8,32 @@ export class MonoText extends React.Component {
   }
 }
 
-export class CustomText extends React.Component {
+export class Black extends React.Component {
   render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'league-spartan' }]} />
+    return <Text {...this.props} style={[this.props.style, { fontFamily: 'now-black' }]} />
   }
 }
 
-export class PoppinsBold extends React.Component {
+export class Bold extends React.Component {
   render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'poppins-bold' }]} />
+    return <Text {...this.props} style={[this.props.style, { fontFamily: 'now-bold' }]} />
   }
 }
 
-export class PoppinsSemiBold extends React.Component {
+export class Medium extends React.Component {
   render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'poppins-semibold' }]} />
+    return <Text {...this.props} style={[this.props.style, { fontFamily: 'now-medium' }]} />
   }
 }
 
-export class ManropeEB extends React.Component {
+export class Regular extends React.Component {
   render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'manrope-extrabold' }]} />
+    return <Text {...this.props} style={[this.props.style, { fontFamily: 'now-regular' }]} />
   }
 }
 
-export class ManropeB extends React.Component {
+export class Light extends React.Component {
   render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'manrope-bold' }]} />
-  }
-}
-
-export class ManropeSB extends React.Component {
-  render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'manrope-semibold' }]} />
-  }
-}
-
-export class ManropeM extends React.Component {
-  render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'manrope-medium' }]} />
-  }
-}
-
-export class ManropeR extends React.Component {
-  render () {
-    return <Text {...this.props} style={[this.props.style, { fontFamily: 'manrope-regular' }]} />
+    return <Text {...this.props} style={[this.props.style, { fontFamily: 'now-light' }]} />
   }
 }

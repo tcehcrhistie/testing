@@ -26,7 +26,7 @@ export default {
   },
   weatherContainer: {
     paddingTop: 8,
-    height: 80,
+    height: 78,
     backgroundColor: '#618af2'
   },
   toDoContainer: {
@@ -75,7 +75,7 @@ export default {
     lineHeight: 42,
     color: '#303440',
     position: 'absolute',
-    letterSpacing: 1.1
+    letterSpacing: 1
   },
   weatherText: {
     fontSize: 24,
@@ -99,7 +99,7 @@ export default {
   viewAllHeader: {
     fontSize: 12,
     color: '#8F99B2',
-    lineHeight: 26,
+    lineHeight: 27,
     textAlignVertical: 'center',
     position: 'absolute'
   },
@@ -107,8 +107,8 @@ export default {
     fontSize: 16,
     color: headerto,
     position: 'absolute',
-    top: 12,
+    top: 15,
     paddingLeft: 38,
-    fontFamily: 'manrope-extrabold'
+    fontFamily: 'now-medium'
   }
 }

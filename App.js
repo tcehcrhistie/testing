@@ -4,8 +4,10 @@ import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
 export default class App extends React.Component {
+
   state = {
     isLoadingComplete: false,
+    fontLoaded: true
   };
 
   render() {
@@ -17,7 +19,7 @@ export default class App extends React.Component {
           onFinish={this._handleFinishLoading}
         />
       );
-    } else {
+    } else if ({fontLoaded: true}) {
       return (
         <View style={styles.container}>
           {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
@@ -39,11 +41,11 @@ export default class App extends React.Component {
         // We include SpaceMono because we use it in HomeScreen.js. Feel free
         // to remove this if you are not using it in your app
         'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-        'manrope-extrabold': require('./assets/fonts/manrope-extrabold.otf'),
-        'manrope-bold': require('./assets/fonts/manrope-bold.otf'),
-        'manrope-semibold': require('./assets/fonts/manrope-semibold.otf'),
-        'manrope-medium': require('./assets/fonts/manrope-medium.otf'),
-        'manrope-regular': require('./assets/fonts/manrope-regular.otf')
+        'now-black': require('./assets/fonts/Now-Black.otf'),
+        'now-bold': require('./assets/fonts/Now-Bold.otf'),
+        'now-medium': require('./assets/fonts/Now-Medium.otf'),
+        'now-regular': require('./assets/fonts/Now-Regular.otf'),
+        'now-light': require('./assets/fonts/Now-Light.otf'),
       }),
     ]);
   };
