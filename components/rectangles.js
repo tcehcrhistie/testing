@@ -44,7 +44,15 @@ export class Hello extends React.Component {
 export class Space1 extends React.Component {
   render () {
     return (
-      <View style={{ paddingBottom: 8 }} />
+      <View style={{ height: 8 }} />
+    )
+  }
+}
+
+export class Space2 extends React.Component {
+  render () {
+    return (
+      <View style={{ height: 12 }} />
     )
   }
 }
@@ -52,15 +60,15 @@ export class Space1 extends React.Component {
 export class Space4 extends React.Component {
   render () {
     return (
-      <View style={{ paddingBottom: 32 }} />
+      <View style={{ height: 32 }} />
     )
   }
 }
 
-export class Space25 extends React.Component {
+export class Space3 extends React.Component {
   render () {
     return (
-      <View style={{ paddingBottom: 24 }} />
+      <View style={{ height: 24 }} />
     )
   }
 }

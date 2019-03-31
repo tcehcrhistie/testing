@@ -22,7 +22,8 @@ export default {
     left: 24
   },
   contentContainer: {
-    paddingTop: 64
+    paddingTop: 64,
+    paddingBottom: 16
   },
   weatherContainer: {
     paddingTop: 8,
